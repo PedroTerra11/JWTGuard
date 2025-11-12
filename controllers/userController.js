@@ -40,7 +40,11 @@ const login = async (req, res) => {
 };
 
 const protected = (req, res) => {
-  res.json({ message: `Acesso autorizado. Bem-vindo, ${req.user.nome || req.user.username}.` });
+  res.json({
+    message: `Acesso autorizado. Bem-vindo, ${
+      req.user.nome || req.user.username
+    }.`,
+  });
 };
 
-module.exports = { cadastrar, login, protected};
+module.exports = { cadastrar, login, protected };

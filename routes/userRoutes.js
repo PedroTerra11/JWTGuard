@@ -1,4 +1,4 @@
-const express = rquire("express");
+const express = require("express");
 const {
   cadastrar,
   login,
